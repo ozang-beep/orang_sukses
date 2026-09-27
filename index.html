@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Judul yang muncul di tab browser -->
+    <title>12 TKJ 3 - SMK GLOBAL MULIA</title>
+
+    <!-- CSS -->
+    <style>
+
+        /* =========================
+           STYLE DASAR
+        ========================= */
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #08111f;
+            color: white;
+        }
+
+        /* =========================
+           NAVBAR
+        ========================= */
+
+        nav {
+            background-color: #050b16;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h2 {
+            margin: 0;
+            color: #00d9ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+        }
+
+        nav a:hover {
+            color: #00d9ff;
+        }
+
+        /* =========================
+           HERO / HOME
+        ========================= */
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+        }
+
+        .hero h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            color: #aab7c7;
+            font-size: 18px;
+        }
+
+        .tombol {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 12px 25px;
+            background-color: #00a8cc;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+
+        /* =========================
+           SECTION
+        ========================= */
+
+        section {
+            padding: 60px 10%;
+        }
+
+        section h2 {
+            text-align: center;
+            color: #00d9ff;
+            margin-bottom: 30px;
+        }
+
+        /* =========================
+           PROFIL
+        ========================= */
+
+        .profil {
+            background-color: #101c2e;
+            padding: 25px;
+            border-radius: 12px;
+            line-height: 1.7;
+        }
+
+        /* =========================
+           KOMPETENSI
+        ========================= */
+
+        .cards {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: #101c2e;
+            padding: 25px;
+            width: 220px;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card h3 {
+            color: #00d9ff;
+        }
+
+        /* =========================
+           GALERI
+        ========================= */
+
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .gallery img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            text-align: center;
+            padding: 25px;
+            background-color: #050b16;
+            color: #aab7c7;
+        }
+
+        /* =========================
+           RESPONSIVE HP
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            nav {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .gallery {
+                grid-template-columns: 1fr;
+            }
+
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+
+    <nav>
+
+        <h2>SMK GLOBAL MULIA</h2>
+
+        <div>
+            <a href="#home">Home</a>
+            <a href="#profil">Profil</a>
+            <a href="#kompetensi">Kompetensi</a>
+            <a href="#galeri">Galeri</a>
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         HOME
+    ========================== -->
+
+    <section id="home" class="hero">
+
+        <h1>12 Teknik Komputer dan Jaringan 3</h1>
+
+        <p>
+            Selamat datang di website kelas 12 TKJ 3
+        </p>
+
+        <a href="#profil" class="tombol">
+            Lihat Profil
+        </a>
+
+    </section>
+
+
+    <!-- =========================
+         PROFIL
+    ========================== -->
+
+    <section id="profil">
+
+        <h2>Profil Kelas</h2>
+
+        <div class="profil">
+
+            <p>
+                Kelas 12 Teknik Komputer dan Jaringan 3
+                merupakan kelas yang mempelajari berbagai
+                bidang teknologi komputer dan jaringan.
+            </p>
+
+            <p>
+                Website ini dibuat sebagai media informasi
+                dan dokumentasi kegiatan siswa TKJ.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         KOMPETENSI
+    ========================== -->
+
+    <section id="kompetensi">
+
+        <h2>Kompetensi TKJ</h2>
+
+        <div class="cards">
+
+            <div class="card">
+
+                <h3>💻 Komputer</h3>
+
+                <p>
+                    Merakit dan melakukan troubleshooting
+                    komputer.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🌐 Jaringan</h3>
+
+                <p>
+                    Mempelajari LAN, IP Address,
+                    dan jaringan komputer.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>📡 MikroTik</h3>
+
+                <p>
+                    Konfigurasi router dan jaringan
+                    menggunakan MikroTik.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <h3>🖥️ Sistem Operasi</h3>
+
+                <p>
+                    Instalasi dan konfigurasi
+                    Windows dan Linux.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         GALERI
+    ========================== -->
+
+    <section id="galeri">
+
+        <h2>Galeri Kegiatan</h2>
+
+        <div class="gallery">
+
+            <img src="foto1.jpeg" alt="Foto kegiatan TKJ">
+
+            <img src="foto2.jpeg" alt="Foto kegiatan TKJ">
+
+            <img src="foto3.jpeg" alt="Foto kegiatan TKJ">
+
+            <img src="foto4.jpeg" alt="Foto kegiatan TKJ">
+
+            <img src="foto5.jpeg" alt="Foto kegiatan TKJ">
+
+            <img src="foto6.jpeg" alt="Foto kegiatan TKJ">
+
+        </div>
+
+    </section>
+
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+
+    <footer>
+
+        <p>
+            © 2026 12 TKJ 3 - SMK GLOBAL MULIA
+        </p>
+
+    </footer>
+
+
+</body>
+</html>
